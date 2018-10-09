@@ -1,5 +1,11 @@
 cmake_minimum_required(VERSION 3.2)
 
+include("cmake/HunterGate.cmake")
+HunterGate(
+    URL "https://github.com/ruslo/hunter/archive/v0.23.32.tar.gz"
+    SHA1 "720311022e7419d083ad9513ca0e752004f106e2"
+)
+
 project(mshadow C CXX)
 
 set(mshadow_LINT_DIRS mshadow mshadow-ps)
